@@ -1,0 +1,27 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+// 600px: phone
+// 600-900: tablet portrait
+// 900-1200: tablet landscape
+// 1200-1800: normal style;
+// ORDER: base + typogarphy > general layout + grid > page layout > components
+
+@mixin respond($breakpoint){
+    @media (max-width: $breakpoint) {
+        @content
+    };
+}

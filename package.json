@@ -1,0 +1,15 @@
+{
+  "name": "cssstarter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sasstocss": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
